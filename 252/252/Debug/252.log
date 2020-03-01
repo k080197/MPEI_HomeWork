@@ -1,0 +1,4 @@
+﻿  252.cpp
+c:\users\k0801\desktop\mpei-homework\252\252\252.cpp(13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\k0801\desktop\mpei-homework\252\252\252.cpp(53): warning C4101: number: неиспользованная локальная переменная
+  252.vcxproj -> C:\Users\k0801\Desktop\MPEI-HomeWork\252\Debug\252.exe
