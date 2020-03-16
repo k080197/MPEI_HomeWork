@@ -1,0 +1,3 @@
+﻿  253.cpp
+C:\Users\k0801\source\repos\253\253\253.cpp(14,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  253.vcxproj -> C:\Users\k0801\source\repos\253\Debug\253.exe
