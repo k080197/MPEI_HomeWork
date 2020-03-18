@@ -1,0 +1,16 @@
+﻿  MyForm.cpp
+C:\Users\k0801\source\repos\Paint\Paint\MyForm.h(432,40): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\k0801\source\repos\Paint\Paint\MyForm.h(441,248): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\k0801\source\repos\Paint\Paint\MyForm.h(441,202): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\k0801\source\repos\Paint\Paint\MyForm.h(442,248): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\k0801\source\repos\Paint\Paint\MyForm.h(442,202): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\k0801\source\repos\Paint\Paint\MyForm.h(443,248): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\k0801\source\repos\Paint\Paint\MyForm.h(443,202): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\k0801\source\repos\Paint\Paint\MyForm.h(444,248): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\k0801\source\repos\Paint\Paint\MyForm.h(444,202): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\k0801\source\repos\Paint\Paint\MyForm.h(450,63): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\k0801\source\repos\Paint\Paint\MyForm.h(458,90): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\k0801\source\repos\Paint\Paint\MyForm.h(500,62): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\k0801\source\repos\Paint\Paint\MyForm.h(603,1): warning C4305: аргумент: усечение из "int" в "bool"
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Paint.vcxproj -> C:\Users\k0801\source\repos\Paint\Debug\Paint.exe
