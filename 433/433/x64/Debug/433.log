@@ -1,0 +1,6 @@
+﻿  433.cpp
+C:\Users\k0801\Desktop\MPEI_HomeWork\433\433\433.cpp(18,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\k0801\Desktop\MPEI_HomeWork\433\433\433.cpp(23,26): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\k0801\Desktop\MPEI_HomeWork\433\433\433.cpp(97,1): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+C:\Users\k0801\Desktop\MPEI_HomeWork\433\433\433.cpp(103,14): warning C4244: return: преобразование "int" в "float", возможна потеря данных
+  433.vcxproj -> C:\Users\k0801\Desktop\MPEI_HomeWork\433\x64\Debug\433.exe

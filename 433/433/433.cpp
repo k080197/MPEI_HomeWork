@@ -9,98 +9,105 @@
 
 using namespace std;
 
-void InitMatrix(float** Array, int n)
+
+class CalculateMatrix
 {
-	srand(time(0));
-	for (int i = 0; i < n; i++)
+public:
+	void InitMatrix(float** Array, int n)
 	{
-		for (int j = 0; j < n; j++)
+		srand(time(0));
+		for (int i = 0; i < n; i++)
 		{
-			Array[i][j] = rand() % 10;// -10;
-			cout << Array[i][j] << "\t";
+			for (int j = 0; j < n; j++)
+			{
+				Array[i][j] = rand() % 10;// -10;
+				cout << Array[i][j] << "\t";
+			}
+			cout << endl;
 		}
 		cout << endl;
 	}
-	cout << endl;
-}
 
-int IndexOfMinSumLine(float** Array, int n)
-{
-	float* sums = new float[n];
-	int index = 0;
-	float value = 0;
-
-	for (int i = 0; i < n; i++)
+	void PrintMatrix(float** Array, int n)
 	{
-		sums[i] = 0;
-
-		for (int j = 0; j < n; j++)
+		for (int i = 0; i < n; i++)
 		{
-			sums[i] += Array[i][j];
-		}
-	}
-
-	value = sums[0];
-
-	for (int i = 0; i < n; i++)
-	{
-		if (sums[i] < value)
-		{
-			value = sums[i];
-			index = i;
-		}
-	}
-
-	return index;
-}
-
-float Average(float** Array, int n)
-{
-	int sum = 0;
-	int count = 0;
-
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = 0; j < n; j++)
-		{
-			if (i < j)
+			for (int j = 0; j < n; j++)
 			{
-				sum += Array[i][j];
-				count++;
+				cout << Array[i][j] << "\t";
+			}
+			cout << endl;
+		}
+	}
+
+	int IndexOfMinSumLine(float** Array, int n)
+	{
+		float* sums = new float[n];
+		int index = 0;
+		float value = 0;
+
+		for (int i = 0; i < n; i++)
+		{
+			sums[i] = 0;
+
+			for (int j = 0; j < n; j++)
+			{
+				sums[i] += Array[i][j];
 			}
 		}
-	}
 
-	return sum / count;
-}
+		value = sums[0];
 
-float** ModificateMatrix(float** Array, int n, int index)
-{
-	float average = Average(Array, n);
-
-	for (int i = 0; i < n; i++)
-	{
-		Array[index][i] += average;
-	}
-
-	return Array;
-}
-
-void PrintMatrix(float** Array, int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = 0; j < n; j++)
+		for (int i = 0; i < n; i++)
 		{
-			cout << Array[i][j] << "\t";
+			if (sums[i] < value)
+			{
+				value = sums[i];
+				index = i;
+			}
 		}
-		cout << endl;
+
+		return index;
 	}
-}
+
+	float** ModificateMatrix(float** Array, int n, int index)
+	{
+		float average = Average(Array, n);
+
+		for (int i = 0; i < n; i++)
+		{
+			Array[index][i] += average;
+		}
+
+		return Array;
+	}
+
+private:
+	float Average(float** Array, int n)
+	{
+		int sum = 0;
+		int count = 0;
+
+		for (int i = 0; i < n; i++)
+		{
+			for (int j = 0; j < n; j++)
+			{
+				if (i < j)
+				{
+					sum += Array[i][j];
+					count++;
+				}
+			}
+		}
+
+		return sum / count;
+	}
+};
 
 int main()
 {
 	int row;
+	CalculateMatrix calc;
 
 	cout << "Enter the size of matrix: ";
 	cin >> row;
@@ -112,9 +119,9 @@ int main()
 		Array[i] = new float[row];
 	}
 
-	InitMatrix(Array, row);
+	calc.InitMatrix(Array, row);
 
-	PrintMatrix(ModificateMatrix(Array, row, IndexOfMinSumLine(Array, row)), row);
+	calc.PrintMatrix(calc.ModificateMatrix(Array, row, calc.IndexOfMinSumLine(Array, row)), row);
 
 	system("Pause");
 }
